@@ -1,15 +1,15 @@
-/* Compact theme — denser spacing, slate accent
+/* Dark Compact theme — high-contrast dark mode, slate accent
+   - Background: dark charcoal
+   - Text: light gray
    - Accent: slate (#2b6b8a)
-   - Font scale: slightly smaller for compact layout (15px)
-   - Very dense spacing: reduced paddings/margins (~30% tighter)
-   - Two-column maintained but tighter
+   - Compact spacing preserved
 */
 :root{
-  --bg:#f7f9fb;
-  --card:#ffffff;
-  --muted:#6b7280;
+  --bg:#0b0f14; /* page background */
+  --card:#0f1720; /* card background */
+  --muted:#98a1ad; /* subdued text */
   --accent:#2b6b8a; /* slate */
-  --accent-2:#1f526b;
+  --accent-2:#6ec1ff; /* lighter accent for links */
   --max-width:920px;
   --gap:0.75rem;
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
@@ -20,7 +20,7 @@ html,body{height:100%}
 body{
   margin:0;
   background:var(--bg);
-  color:#0f172a;
+  color:#e6eef6; /* main text */
   line-height:1.45;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
@@ -34,8 +34,8 @@ body{
 }
 
 .site-header{
-  background:linear-gradient(180deg, rgba(255,255,255,0.85), rgba(250,251,253,0.95));
-  border-bottom:1px solid rgba(15,23,42,0.04);
+  background:linear-gradient(180deg, rgba(15,20,26,0.6), rgba(14,18,24,0.7));
+  border-bottom:1px solid rgba(255,255,255,0.03);
   padding:0.8rem 0;
 }
 
@@ -51,21 +51,23 @@ body{
   border-radius:8px;
   object-fit:cover;
   flex:0 0 72px;
-  background:linear-gradient(135deg, #eef5fb, #f8fbfd);
-  border:1px solid rgba(31,82,107,0.06);
+  background:linear-gradient(135deg, rgba(43,107,138,0.12), rgba(47,79,99,0.06));
+  border:1px solid rgba(255,255,255,0.03);
 }
 
-h1{margin:.08rem 0 .2rem;font-size:1.25rem;font-weight:600;color:var(--accent-2)}
+h1{margin:.08rem 0 .2rem;font-size:1.25rem;font-weight:600;color:var(--accent)}
 .tagline{margin:0;color:var(--muted);font-size:.9rem}
-.links a{color:var(--accent);text-decoration:none;font-size:.9rem}
-.links a:hover{color:var(--accent-2);text-decoration:underline}
+.links a{color:var(--accent-2);text-decoration:none;font-size:.9rem}
+.links a:hover{color:var(--accent);text-decoration:underline}
 
 main{padding:0.8rem 0}
-section{background:var(--card);border-radius:8px;padding:0.7rem;margin-bottom:0.7rem;box-shadow:0 4px 12px rgba(9,37,68,0.03)}
-h2{margin-top:0;font-size:1rem;color:var(--accent-2);letter-spacing:0.2px}
-.job h3{margin:.2rem 0;font-size:1rem}
+section{background:var(--card);border-radius:8px;padding:0.7rem;margin-bottom:0.7rem;box-shadow:0 6px 18px rgba(2,6,10,0.6)}
+h2{margin-top:0;font-size:1rem;color:var(--accent);letter-spacing:0.2px}
+.job h3{margin:.2rem 0;font-size:1rem;color:#dbeafe}
 .meta{color:var(--muted);font-size:.85rem;margin-bottom:.4rem}
 ul{margin:.2rem 0 0 1rem;font-size:.95rem}
+
+a{color:var(--accent-2)}
 
 .site-footer{
   padding:0.6rem 0;
@@ -83,7 +85,7 @@ ul{margin:.2rem 0 0 1rem;font-size:.95rem}
 
 /* Compact list styles for skills/projects */
 .skills-list{display:flex;flex-wrap:wrap;gap:.4rem}
-.skill-pill{background:#f6fbff;border:1px solid rgba(43,107,138,0.06);padding:.28rem .5rem;border-radius:999px;color:var(--accent-2);font-size:.85rem}
+.skill-pill{background:rgba(46,64,74,0.32);border:1px solid rgba(255,255,255,0.03);padding:.28rem .5rem;border-radius:999px;color:var(--accent-2);font-size:.85rem}
 
 /* Small utilities */
 .kv{display:flex;gap:.4rem;align-items:center}
