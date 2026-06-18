@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Krishna — CV</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Curriculum Vitae of Krishna — Developer" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <img class="avatar" src="avatar.png" alt="Krishna" onerror="this.style.display='none'"/>
+      <div>
+        <h1>Krishna</h1>
+        <p class="tagline">Developer • Location • <a href="mailto:you@example.com">you@example.com</a></p>
+        <p class="links">
+          <a href="https://github.com/banned94" target="_blank" rel="noopener">GitHub</a> ·
+          <a href="#" target="_blank" rel="noopener">LinkedIn</a> ·
+          <a href="resume.pdf" target="_blank">Download PDF</a>
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <h2>About</h2>
+      <p>Short professional summary: who you are, what you build, and the value you bring. 2–3 short sentences.</p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <article class="job">
+        <h3>Senior Developer — Company Name</h3>
+        <p class="meta">Dates • Location</p>
+        <ul>
+          <li>Key responsibility or achievement — what you improved or built.</li>
+          <li>Second highlight with measurable impact if possible.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <h3>Previous Role — Other Company</h3>
+        <p class="meta">Dates • Location</p>
+        <ul>
+          <li>Responsibility / achievements.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="projects">
+      <h2>Selected Projects</h2>
+      <ul>
+        <li><strong>Project Name</strong> — short summary. <a href="#">Live/Repo</a></li>
+        <li><strong>Project Name</strong> — short summary. <a href="#">Live/Repo</a></li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <p>Languages: JavaScript, Python, ... • Tools: Git, Docker, ... • Others: Design, Testing</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <p><strong>Degree</strong>, University — Year</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+      <p>Or <a href="https://calendly.com/your-link" target="_blank">schedule a call</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Krishna — Built with GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
