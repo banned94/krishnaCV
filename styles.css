@@ -5,8 +5,8 @@
    - Compact spacing preserved
 */
 :root{
-  --bg:#0b0f14; /* page background */
-  --card:#0f1720; /* card background */
+  --bg:#010d1c; /* page background */
+  --card:#192532; /* card background */
   --muted:#98a1ad; /* subdued text */
   --accent:#2b6b8a; /* slate */
   --accent-2:#6ec1ff; /* lighter accent for links */
@@ -46,11 +46,11 @@ body{
 }
 
 .avatar{
-  width:72px;
-  height:72px;
+  width:85px;
+  height:85px;
   border-radius:8px;
   object-fit:cover;
-  flex:0 0 72px;
+  flex:0 0 85px;
   background:linear-gradient(135deg, rgba(43,107,138,0.12), rgba(47,79,99,0.06));
   border:1px solid rgba(255,255,255,0.03);
 }
